@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <title>Meu Site Pessoal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+ 
+    <link rel="stylesheet" href="estilo.css">
+
+</head>
+
+<body>
+
+    <h1>Oi! Eu sou a Gisele!</h1>
+    <p>Seja muito bem-vindo ao meu site pessoal.</p>
+
+    <main>
+    <section id="sobre">
+        <img src="minha_foto.jpg" alt="Foto de Gisele" class="minha-foto">
+
+        <h2>Sobre mim</h2>
+        <p>Licenciada em Matemática e estudante de Ciências da Computação.</p>
+    </section>
+
+    <section class="contato">
+        <h2>Entre em contato</h2>
+
+        <p>
+        <i class="fa-solid fa-envelope"></i>
+        <a href="mailto:giliam.ga@gmail.com" target="_blank" style="color: mintcream; text-decoration: none;">
+            giliam.ga@gmail.com
+        </a>
+    </p>
+        <p>
+        <i class="fa-solid fa-envelope"></i>
+        <a href="https://instagram.com/amorimgisele_" target="_blank" style="color: mintcream; text-decoration: none;">
+            @amorimgisele_
+        </a>
+    </p>
+        <p><i class="fa-brands fa-github"></i>
+            <a href="https://github.com/Gisele0304" target="_blank" style="color: mintcream; text-decoration: none;">
+        /Gisele0304
+    </a>
+</p>
+
+    </section>
+</main>
+
+
+    <footer>
+        <p>© <span id="ano"></span> - Criado por mim</p>
+    </footer>
+
+    <script>
+        document.getElementById('ano').textContent = new Date().getFullYear();
+    </script>
+
+</body>
+</html>

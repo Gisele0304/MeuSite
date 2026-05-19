@@ -2,58 +2,123 @@
 <html lang="pt-BR">
 <head>
     <meta charset="utf-8">
-    <title>Meu Site Pessoal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gisele Lima de Amorim</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
- 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="estilo.css">
 
 </head>
 
 <body>
 
-    <h1>Oi! Eu sou a Gisele!</h1>
-    <p>Seja muito bem-vindo ao meu site pessoal.</p>
+    <header>
+        <div class="header-inner">
+            <p class="header-tagline">Matemática & Computação</p>
+            <h1>Gisele Lima<br><em>de Amorim</em></h1>
+            <p class="header-sub">
+                Explorando a lógica matemática e a arquitetura de dados<br>
+                para construir soluções claras e eficientes.
+            </p>
+        </div>
+        <div class="header-deco" aria-hidden="true">∑ ∂ ∫ λ π</div>
+    </header>
 
     <main>
-    <section id="sobre">
-        <img src="minha_foto.jpg" alt="Foto de Gisele" class="minha-foto">
 
-        <h2>Sobre mim</h2>
-        <p>Licenciada em Matemática e estudante de Ciências da Computação.</p>
+        <section id="sobre">
+            <div class="sobre-grid">
+                <div class="foto-wrap">
+                    <img src="minha_foto.jpg" alt="Foto de Gisele" class="minha-foto">
+                    <div class="foto-anel" aria-hidden="true"></div>
+                </div>
+                <div class="sobre-texto">
+                    <h2>Sobre mim</h2>
+                    <p>
+                        Licenciada em Matemática e atualmente estudante de Ciências da Computação,
+                        sou apaixonada por tecnologia, programação e pela arte de resolver problemas.
+                    </p>
+                    <p>
+                        Busco constantemente aprimorar minhas habilidades e expandir meus conhecimentos
+                        para criar soluções inovadoras e impactantes. Acredito que a combinação de
+                        lógica matemática e criatividade é a chave para projetos eficientes e significativos.
+                    </p>
+                </div>
+            </div>
+        </section>
+    
+        <section id="habilidades">
+            <h2>Minhas Habilidades</h2>
+            <div class="habilidades-grid">
+                <div class="hab-card">
+                    <i class="fa-solid fa-code" aria-hidden="true"></i>
+                    <h3>Programação</h3>                        
+                    <p>Python, JavaScript</p>
+                </div>
+                <div class="hab-card">
+                    <i class="fa-solid fa-globe" aria-hidden="true"></i>
+                    <h3>Desenvolvimento Web</h3>
+                    <p>HTML, CSS</p>
+                </div>
+                <div class="hab-card">
+                    <i class="fa-solid fa-database" aria-hidden="true"></i>
+                    <h3>Banco de Dados</h3>
+                    <p>MySQL, PostgreSQL</p>
+                </div>
+                <div class="hab-card">
+                    <i class="fa-solid fa-wrench" aria-hidden="true"></i>
+                    <h3>Ferramentas</h3>
+                    <p>Git, PgAdmin, VS Code</p>
+                </div>
+            </div>
+        </section>
+
+    <section id="projetos">
+        <h2>Meus Projetos</h2>
+        <div class="projetos-grid">
+                <article class="projeto-card">
+                    <h3>Tesseract - Controle Financeiro</h3>
+                    <p>Um sistema de controle financeiro desenvolvido com Python utilizando a biblioteca CustomTkinter, projetada para gerenciar receitas e despesas de forma prática e segura.</p>
+                    <a href="https://github.com/E-Danillo/tesseract-controle-financeiro" target="_blank" class="btn-projeto">
+                        <i class="fa-brands fa-github"></i> Ver no GitHub
+                    </a>
+                </article>
+            </div>
     </section>
 
-    <section class="contato">
-        <h2>Entre em contato</h2>
-
-        <p>
-        <i class="fa-solid fa-envelope"></i>
-        <a href="mailto:giliam.ga@gmail.com" target="_blank" style="color: mintcream; text-decoration: none;">
-            giliam.ga@gmail.com
-        </a>
-    </p>
-        <p>
-        <i class="fa-solid fa-envelope"></i>
-        <a href="https://instagram.com/amorimgisele_" target="_blank" style="color: mintcream; text-decoration: none;">
-            @amorimgisele_
-        </a>
-    </p>
-        <p><i class="fa-brands fa-github"></i>
-            <a href="https://github.com/Gisele0304" target="_blank" style="color: mintcream; text-decoration: none;">
-        /Gisele0304
-    </a>
-</p>
-
-    </section>
-</main>
-
-
+     <section id="contato">
+            <h2>Entre em contato</h2>
+            <p class="contato-intro">
+                Quer conversar sobre projetos, colaborações ou só trocar uma ideia?
+                Fique à vontade para me chamar!
+            </p>
+            <ul class="contato-lista">
+                <li>
+                    <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                    <a href="mailto:giliam.ga@gmail.com">giliam.ga@gmail.com</a>
+                </li>
+                <li>
+                    <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                    <a href="https://instagram.com/amorimgisele_" target="_blank" rel="noopener">@amorimgisele_</a>
+                </li>
+                <li>
+                    <i class="fa-brands fa-github" aria-hidden="true"></i>
+                    <a href="https://github.com/Gisele0304" target="_blank" rel="noopener">/Gisele0304</a>
+                </li>
+            </ul>
+        </section>
+ 
+    </main>
+ 
     <footer>
-        <p>© <span id="ano"></span> - Criado por mim</p>
+        <p>© <span id="ano"></span> · Feito com cuidado por Gisele Lima de Amorim</p>
     </footer>
-
+ 
     <script>
         document.getElementById('ano').textContent = new Date().getFullYear();
     </script>
-
+ 
 </body>
 </html>
